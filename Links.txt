@@ -1,0 +1,4 @@
+Trello: https://trello.com/b/5kxueOFT/rwmprojectkevinandersen
+JIRA: http://jira.itcarlow.ie:8080/secure/RapidBoard.jspa?rapidView=232&projectKey=DE&view=detail&selectedIssue=DE-1
+User Guide: https://docs.google.com/document/d/1GCQtx5-7yt-nOhX4XYBA_A5PvzaFUdllrnuUFn3e6XQ/edit#heading=h.qzmd7ob8rczl
+TDD: https://docs.google.com/document/d/1CWuzNtUk03BJVvzU9zwreVvBLUXymLIWNcBMgfdP9Zs/edit
