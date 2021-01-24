@@ -5,11 +5,8 @@ using UnityEngine;
 public class AudioManager : MonoBehaviour
 {
 	public static AudioManager instance;
-
-	public AudioMixerGroup mixerGroup;
-
 	public Sound[] sounds;
-
+	private bool isMuted = false;
 	void Awake()
 	{
         //makes sure there is only one audio manager
@@ -29,8 +26,7 @@ public class AudioManager : MonoBehaviour
 			s.source = gameObject.AddComponent<AudioSource>();
 			s.source.clip = s.clip;
 			s.source.loop = s.loop;
-
-			s.source.outputAudioMixerGroup = mixerGroup;
+			s.source.outputAudioMixerGroup = s.mixerGroup;
 		}
 	}
 
