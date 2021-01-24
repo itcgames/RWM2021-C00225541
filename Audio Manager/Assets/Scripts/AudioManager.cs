@@ -6,7 +6,6 @@ public class AudioManager : MonoBehaviour
 {
 	public static AudioManager instance;
 	public Sound[] sounds;
-	private bool isMuted = false;
 	void Awake()
 	{
         //makes sure there is only one audio manager
