@@ -7,7 +7,9 @@ public class PauseController : MonoBehaviour
 {
     public GameObject pauseMenuUi;
 
-    public static bool GameIsPaused = false;
+    public static bool GameIsPaused= false;
+
+    //checks if the escape button is pressed and if so, toggles the pause
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Escape))
@@ -22,12 +24,16 @@ public class PauseController : MonoBehaviour
             }
         }
     }
+
+    //resumes the time and sets the pause menu to unactive
     public void Resume()
     {
         pauseMenuUi.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
     }
+
+    //pauses the game and displays the pause menu
     public void Pause()
     {
         pauseMenuUi.SetActive(true);
